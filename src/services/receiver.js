@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  function ReceiverManager (CastService) {
+  function ReceiverManager (CastService,$rootScope) {
     var service = {},
         onSenderConnected,
         onSenderDisconnected,
@@ -50,5 +50,5 @@
     return service;
   }
 
-  angular.module('ngChromecast').service('ReceiverManager', ['CastService', ReceiverManager]);
+  angular.module('ngChromecast').service('ReceiverManager', ['CastService','$rootScope', ReceiverManager]);
 }).call(this);
