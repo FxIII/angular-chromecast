@@ -6,7 +6,7 @@
     "Atticus White <contact@atticuswhite.com>"
   ],
   "description": "AngularJS wrapper for GoogleCast chrome SDK",
-  "main": "src/app.js",
+  "main": "dist/angular-chromecast.js",
   "keywords": [
     "angularjs",
     "google",
