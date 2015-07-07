@@ -7,7 +7,7 @@
         bindMessageBus,
         onMessageReceived;
 
-    createMessageBusMessageHandler = function (channel) {
+    var createMessageBusMessageHandler = function (channel) {
       return function (message) {
         $rootScope.$broadcast('chromecast.messageReceived', message, channel.namespace);
       }
